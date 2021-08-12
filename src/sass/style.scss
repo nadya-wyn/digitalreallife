@@ -7,12 +7,17 @@
 	box-sizing: border-box;
 }
 
+body {
+	color: $color__dark;
+}
+
 .container {
 	margin: 0 auto;
-	width: 990px;
+	width: $container-width--mobile;
 	height: 100%;
 
-	padding: 0 15px;
+	padding: 10px 15px;
+
 }
 
 .wrapper {
@@ -34,7 +39,7 @@ h5 {
 
 a {
 	&:hover {
-		color: $maincolor;
+		color: $color__main;
 	}
 }
 
@@ -50,7 +55,7 @@ a {
 	text-align: left;
 	margin: 0;
 
-	color: $colorgrl;
+	color: $color__grey--l;
 
 	&_w {
 		color: #fff;
