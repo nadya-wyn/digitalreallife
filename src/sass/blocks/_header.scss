@@ -1,3 +1,40 @@
 .header {
 	border-top: 5px solid $color__main;
+
+	&__nav {
+		@include reset-list;
+
+		color: $color__grey--l;
+		background-color: $color__grey;
+
+		margin: 0px;
+
+		width: 100%;
+
+		&-container {
+			position: absolute;
+			top: 5px;
+			right: 0px;
+
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+		}
+
+		&-toggle {
+
+			width: 55px;
+			height: 50px;
+
+			background-color: $color__grey;
+		}
+
+		a {
+			color: $color__grey--l;
+		}
+	}
 }

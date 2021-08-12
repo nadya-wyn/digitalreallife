@@ -6,3 +6,11 @@
 @mixin textshadow {
 	text-shadow: 0 0 30px rgb(56, 42, 66);
 }
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
