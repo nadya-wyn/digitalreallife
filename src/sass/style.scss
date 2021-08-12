@@ -1,0 +1,72 @@
+@import "libs/normalize";
+@import "libs/fonts";
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	width: 990px;
+	height: 100%;
+
+	padding: 0 15px;
+}
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	&:hover {
+		color: $maincolor;
+	}
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+
+	z-index: 1000;
+}
+
+.title_pr {
+	width: 100%;
+	text-align: left;
+	margin: 0;
+
+	color: $colorgrl;
+
+	&_w {
+		color: #fff;
+		font-size: 28px;
+		font-weight: 300;
+
+		@include textshadow;
+	}
+}
+
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/buttons";
+
+@import "base/anim";
+
+@import "base/media";

@@ -1,0 +1,8 @@
+@mixin reset-list {
+	padding: 0;
+	list-style: none;
+}
+
+@mixin textshadow {
+	text-shadow: 0 0 30px rgb(56, 42, 66);
+}

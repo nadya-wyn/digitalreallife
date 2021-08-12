@@ -1,0 +1,21 @@
+.footer {
+	background-color: $colorgr;
+
+	min-height: 350px;
+	padding: 35px;
+	color: rgb(223, 223, 223);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		margin: 0 0 20px 0;
+		text-transform: uppercase;
+	}
+
+	&__sitemap {
+		flex-basis: 60%;
+	}
+}
