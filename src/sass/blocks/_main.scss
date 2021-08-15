@@ -1,4 +1,7 @@
 .main {
+	margin-top: 180px;
+	min-height: 260px;
+
 	&__article-list {
 		@include reset-list;
 

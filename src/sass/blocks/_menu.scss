@@ -17,10 +17,6 @@
 	transition: color 0.3s ease;
 }
 
-.menuToggle a:hover {
-	color: tomato;
-}
-
 .menuToggle input {
 	display: block;
 	width: 40px;
@@ -47,7 +43,7 @@
 	margin-bottom: 8px;
 	position: relative;
 
-	background: #cdcdcd;
+	background: #fff;
 	border-radius: 2px;
 
 	z-index: 1;
@@ -72,7 +68,7 @@
 	opacity: 1;
 	//transform: rotate(45deg) translate(-2px, -1px);
 	transform: rotate(45deg) translate(4px, -3px);
-	background: #232323;
+	background: #fff;
 }
 
 /* But let's hide the middle one. */
@@ -92,12 +88,15 @@
 	position: absolute;
 	top: -36px;
 	right: -10px;
-	width: 375px;
+	//width: 375px;
+	min-height: 245px;
 	//margin: -100px 0 0 -50px;
 
-	padding: 25px;
+	width: auto;
 
-	background: #ededed;
+	padding: 25px 100px 25px 35px;
+
+	background: #000;
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
 	/* to stop flickering of text in safari */
@@ -116,6 +115,12 @@
 
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
+
+	color: #fff;
+
+	&:hover {
+		color: $color__main;
+	}
 }
 
 /*
