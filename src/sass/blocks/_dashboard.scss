@@ -19,8 +19,39 @@
 			border-radius: 4px;
 			margin-bottom: 5px;
 
+			&__container {
+				display: flex;
+				justify-content: space-between;
+			}
+
 			&__data {
 				margin: 5px;
+			}
+
+			&__buttons {
+				display: flex;
+			}
+
+			&__button {
+				display: block;
+
+				height: 30px;
+				width: 30px;
+
+				margin: 5px 1px;
+
+				background-repeat: no-repeat;
+				background-size: contain;
+
+				cursor: pointer;
+			}
+
+			.progress {
+				background-image: url('../icons/pie-chart.svg');
+			}
+
+			.summary {
+				background-image: url('../icons/file-text2-grey.svg');
 			}
 
 			&__pb {
