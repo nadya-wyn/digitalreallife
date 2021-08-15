@@ -18,6 +18,8 @@ body {
 
 	padding: 10px 15px;
 
+	position: relative;
+
 }
 
 .wrapper {
@@ -67,6 +69,7 @@ a {
 }
 
 @import "blocks/header";
+@import "blocks/menu";
 @import "blocks/main";
 @import "blocks/footer";
 @import "blocks/buttons";
