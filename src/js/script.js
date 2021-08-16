@@ -4,7 +4,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	let progressIcon = document.querySelector('.progress'),
 		progressDiv = document.querySelector('.dashboard__list-item__progress'),
-		progressItems = document.querySelectorAll('.dashboard__list-item__progress-item');
+		progressItems = document.querySelectorAll('.dashboard__list-item__progress-item'),
+		filterSwitches = document.querySelectorAll('.filterswitch');
 
 	//Progress Open-Close
 	progressIcon.addEventListener('click', function () {
@@ -33,6 +34,31 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	progressItems.forEach(setItemColor);
+
+	//Filter Switches
+
+	function chooseSwitch(item) {
+		item.addEventListener('click', function () {
+			if (this.classList.contains('sw-active')) {
+				this.classList.remove('sw-active');
+				let thisid = this.id.slice(12);
+
+				let listToShow = document.getElementById('list' + thisid);
+
+				listToShow.classList.add('visually-hidden');
+
+			} else {
+				this.classList.add('sw-active');
+				let thisid = this.id.slice(12);
+
+				let listToShow = document.getElementById('list' + thisid);
+
+				listToShow.classList.remove('visually-hidden');
+			}
+		});
+	}
+
+	filterSwitches.forEach(chooseSwitch);
 
 
 });
