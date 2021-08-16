@@ -2,25 +2,37 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	//Set variables
 
-	let progressIcon = document.querySelector('.progress'),
-		progressDiv = document.querySelector('.dashboard__list-item__progress'),
+	let progressIcons = document.querySelectorAll('.progress'),
 		progressItems = document.querySelectorAll('.dashboard__list-item__progress-item'),
 		filterSwitches = document.querySelectorAll('.filterswitch'),
-		starCheckers = document.querySelectorAll('.dashboard__list-item__star');
+		starCheckers = document.querySelectorAll('.dashboard__list-item__star'),
+		tagCheckers = document.querySelectorAll('.dashboard__tags-item');
 
 	//Progress Open-Close
-	progressIcon.addEventListener('click', function () {
-		if (this.classList.contains('progress-active')) {
-			this.classList.remove('progress-active');
-			this.classList.add('progress-close');
 
-			progressDiv.classList.remove('visually-hidden');
-		} else {
-			this.classList.remove('progress-close');
-			this.classList.add('progress-active');
-			progressDiv.classList.add('visually-hidden');
-		}
-	});
+	function openProgress(item) {
+		item.addEventListener('click', function () {
+			if (this.classList.contains('progress-active')) {
+				this.classList.remove('progress-active');
+				this.classList.add('progress-close');
+
+				let thisid = this.id.slice(8);
+
+				let progressDiv = document.getElementById('progresslist' + thisid);
+				progressDiv.classList.remove('visually-hidden');
+			} else {
+				this.classList.remove('progress-close');
+				this.classList.add('progress-active');
+
+				let thisid = this.id.slice(8);
+
+				let progressDiv = document.getElementById('progresslist' + thisid);
+				progressDiv.classList.add('visually-hidden');
+			}
+		});
+	}
+
+	progressIcons.forEach(openProgress);
 
 	//Progress-Item active-inactive
 
@@ -73,4 +85,18 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	starCheckers.forEach(starActive);
+
+	//Tag active
+	function tagActive(item) {
+		item.addEventListener('click', function () {
+			if (this.classList.contains('tag-active')) {
+				this.classList.remove('tag-active');
+			} else {
+				this.classList.add('tag-active');
+			}
+		});
+	}
+
+	tagCheckers.forEach(tagActive);
+
 });

@@ -13,6 +13,32 @@
 		}
 	}
 
+	&__tags {
+		display: flex;
+
+		margin-top: 15px;
+
+		&-item {
+			background-color: $color__grey--l;
+			border-radius: 8px;
+
+			height: 24px;
+			padding: 5px 10px;
+
+			font-size: smaller;
+
+			color: #fff;
+
+			margin-right: 5px;
+
+			cursor: pointer;
+		}
+	}
+
+	.tag-active {
+		background-color: $color__main;
+	}
+
 	&__catview {
 		display: flex;
 		flex-wrap: nowrap;
@@ -20,6 +46,8 @@
 		overflow-x: scroll;
 
 		max-width: 100%;
+
+		margin-top: 20px;
 	}
 
 	&__list {
@@ -42,6 +70,8 @@
 				background-size: contain;
 				margin-top: 5px;
 				margin-left: 6px;
+
+				cursor: pointer;
 			}
 
 			.star-active {
@@ -100,6 +130,25 @@
 
 			.summary-active {
 				background-image: url('../icons/file-text2.svg');
+			}
+
+			&__tags {
+				display: flex;
+
+				margin-top: 10px;
+
+				&-item {
+					background-color: $color__grey--l;
+					border-radius: 8px;
+
+					height: 24px;
+					padding: 2px 10px;
+
+					color: #fff;
+
+					margin-right: 5px;
+
+				}
 			}
 
 			&__progress {
