@@ -1,5 +1,17 @@
 .dashboard {
-	&__filters {}
+	&__filters {
+		display: flex;
+		flex-flow: row wrap;
+
+		&-item {
+			flex-basis: 80px;
+
+			display: flex;
+			flex-flow: column nowrap;
+
+			font-size: smaller;
+		}
+	}
 
 	&__catview {
 		display: flex;
@@ -22,6 +34,20 @@
 			border-radius: 4px;
 			margin-bottom: 5px;
 
+			&__star {
+				width: 30px;
+				height: 30px;
+				background-image: url('../icons/star-empty.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				margin-top: 5px;
+				margin-left: 6px;
+			}
+
+			.star-active {
+				background-image: url('../icons/star-full.svg');
+			}
+
 			&__container {
 				display: flex;
 				justify-content: space-between;
@@ -29,6 +55,7 @@
 
 			&__data {
 				margin: 5px;
+				flex-basis: 60%;
 			}
 
 			&__buttons {

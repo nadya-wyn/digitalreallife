@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', function () {
 	let progressIcon = document.querySelector('.progress'),
 		progressDiv = document.querySelector('.dashboard__list-item__progress'),
 		progressItems = document.querySelectorAll('.dashboard__list-item__progress-item'),
-		filterSwitches = document.querySelectorAll('.filterswitch');
+		filterSwitches = document.querySelectorAll('.filterswitch'),
+		starCheckers = document.querySelectorAll('.dashboard__list-item__star');
 
 	//Progress Open-Close
 	progressIcon.addEventListener('click', function () {
@@ -60,5 +61,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	filterSwitches.forEach(chooseSwitch);
 
+	//Star active
+	function starActive(item) {
+		item.addEventListener('click', function () {
+			if (this.classList.contains('star-active')) {
+				this.classList.remove('star-active');
+			} else {
+				this.classList.add('star-active');
+			}
+		});
+	}
 
+	starCheckers.forEach(starActive);
 });
