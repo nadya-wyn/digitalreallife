@@ -9,7 +9,6 @@ window.addEventListener('DOMContentLoaded', function () {
 		tagCheckers = document.querySelectorAll('.dashboard__tags-item');
 
 	//Progress Open-Close
-
 	function openProgress(item) {
 		item.addEventListener('click', function () {
 			if (this.classList.contains('progress-active')) {
@@ -31,11 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
-	progressIcons.forEach(openProgress);
-
 	//Progress-Item active-inactive
-
 	function setItemColor(item) {
 		item.addEventListener('click', function () {
 			if (this.classList.contains('pi-active')) {
@@ -45,11 +40,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
-	progressItems.forEach(setItemColor);
-
 	//Filter Switches
-
 	function chooseSwitch(item) {
 		item.addEventListener('click', function () {
 			if (this.classList.contains('sw-active')) {
@@ -70,9 +61,6 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
-	filterSwitches.forEach(chooseSwitch);
-
 	//Star active
 	function starActive(item) {
 		item.addEventListener('click', function () {
@@ -83,9 +71,6 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
-	starCheckers.forEach(starActive);
-
 	//Tag active
 	function tagActive(item) {
 		item.addEventListener('click', function () {
@@ -96,7 +81,10 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
+	progressIcons.forEach(openProgress);
+	progressItems.forEach(setItemColor);
+	filterSwitches.forEach(chooseSwitch);
+	starCheckers.forEach(starActive);
 	tagCheckers.forEach(tagActive);
 
 });
