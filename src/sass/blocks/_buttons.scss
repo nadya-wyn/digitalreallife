@@ -49,6 +49,10 @@ input:checked+.slider--fav {
 	background-color: #ffae00;
 }
 
+input:checked+.slider--fin {
+	background-color: #b409ca;
+}
+
 input:focus+.slider {
 	box-shadow: 0 0 1px $color__main;
 }

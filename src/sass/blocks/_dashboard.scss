@@ -5,7 +5,8 @@
 		flex-flow: row wrap;
 
 		&-item {
-			flex-basis: 80px;
+			flex-basis: 95px;
+			margin-bottom: 12px;
 
 			display: flex;
 			flex-flow: column nowrap;
@@ -39,6 +40,7 @@
 	.tag-active {
 		background-color: $color__main;
 	}
+
 
 	&__catview {
 		display: flex;
