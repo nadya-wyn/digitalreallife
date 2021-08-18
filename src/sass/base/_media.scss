@@ -19,6 +19,15 @@
 			&-item {
 				flex-basis: $post-width--desktop;
 				margin: 0 15px 30px 15px;
+
+				&--featured {
+					flex-basis: 100%;
+					padding-left: $post-width--desktop;
+
+					h2 {
+						font-size: 2em;
+					}
+				}
 			}
 		}
 	}
