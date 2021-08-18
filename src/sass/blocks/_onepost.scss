@@ -1,4 +1,24 @@
 .onepost {
+	&__date {
+		font-size: 0.9em;
+		letter-spacing: 0.2em;
+	}
+
+	&__tags {
+		display: flex;
+
+		font-size: 0.8em;
+
+		margin-top: 15px;
+
+		&-item {
+			border: 1px solid $color__grey;
+			border-radius: 4px;
+			padding: 3px 6px;
+			margin-right: 5px;
+		}
+	}
+
 	&__highlight {
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 1.2em;
@@ -8,13 +28,23 @@
 	}
 
 	&__banner {
-		height: 280px;
+		height: 250px;
 		background-color: #eee;
+
+		overflow: hidden;
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	&__text {
 		padding: 20px 10px;
 		line-height: 2em;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	&__cattag {
