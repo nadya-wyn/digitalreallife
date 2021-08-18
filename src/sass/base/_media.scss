@@ -32,6 +32,31 @@
 		}
 	}
 
+	// ONE POST
+	.onepost {
+		&__container {
+			display: flex;
+			flex-flow: row nowrap;
 
+			justify-content: space-between;
+		}
+
+		&__text {
+			flex-basis: $text-width--desktop;
+		}
+
+		&__cattag {
+			flex-basis: $sidebar-width--desktop;
+			padding-left: 20px;
+		}
+
+		&__categories-select {
+			width: 100%;
+		}
+
+		&__highlight {
+			font-size: 1.3em;
+		}
+	}
 
 }

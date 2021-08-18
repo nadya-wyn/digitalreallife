@@ -15,3 +15,6 @@ $container-width--mobile: 100%;
 $container-width--desktop: 990px;
 
 $post-width--desktop: $container-width--desktop / 2 - 45px;
+
+$text-width--desktop: $container-width--desktop * 0.7;
+$sidebar-width--desktop: $container-width--desktop * 0.25;
