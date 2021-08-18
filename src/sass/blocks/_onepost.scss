@@ -1,0 +1,19 @@
+.onepost {
+	&__highlight {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 1.2em;
+		font-weight: 300;
+		line-height: 1.8em;
+		margin: 40px 15px;
+	}
+
+	&__banner {
+		height: 280px;
+		background-color: #eee;
+	}
+
+	&__text {
+		padding: 20px 10px;
+		line-height: 2em;
+	}
+}
