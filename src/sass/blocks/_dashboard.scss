@@ -48,7 +48,7 @@
 
 		max-width: 100%;
 
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 
 	&__list {
@@ -73,6 +73,10 @@
 				margin-left: 6px;
 
 				cursor: pointer;
+			}
+
+			&__tags {
+				margin: 15px 10px;
 			}
 
 			.star-active {
@@ -159,7 +163,7 @@
 				@include reset-list;
 
 				min-height: 100px;
-				width: 100%;
+
 
 				margin: 25px 0 25px 20px;
 
