@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		progressItems = document.querySelectorAll('.dashboard__list-item__progress-item'),
 		filterSwitches = document.querySelectorAll('.filterswitch'),
 		starCheckers = document.querySelectorAll('.dashboard__list-item__star'),
-		tagCheckers = document.querySelectorAll('.dashboard__tags-item');
+		tagCheckers = document.querySelectorAll('.content-tag');
 
 	//Progress Open-Close
 	function openProgress(item) {

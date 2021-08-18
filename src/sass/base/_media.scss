@@ -3,4 +3,26 @@
 	.container {
 		width: $container-width--desktop;
 	}
+
+
+	//BLOGPOSTS
+
+	.blogposts {
+		&__categories {
+			&-select {
+				width: 50%;
+			}
+		}
+
+		&__list {
+
+			&-item {
+				flex-basis: $post-width--desktop;
+				margin: 0 15px 30px 15px;
+			}
+		}
+	}
+
+
+
 }

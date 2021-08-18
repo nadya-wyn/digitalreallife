@@ -12,7 +12,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<h1 class="header__title">digitalReal.life</h1>
+			<h1 class="header__title"><a href="/">digitalReal.life</a></h1>
 			<nav role="navigation">
 				<div class="menuToggle">
 					<input type="checkbox" />
@@ -30,7 +30,7 @@
 						<a href="#">
 							<li>Contact</li>
 						</a>
-						<a href="/my">
+						<a href="/my.html">
 							<li class="menu__login"></li>
 						</a>
 					</ul>
@@ -42,386 +42,180 @@
 	</header>
 	<main class="main">
 		<div class="container">
-			<!-- LEARNING DASHBOARD -->
-			<section class="dashboard">
-				<h2>Overall Learning Plan</h2>
+			<!-- RECENT POSTS -->
+			<section class="blogposts">
+				<h1>Recently in Blog</h1>
+				<div class="blogposts__categories">
 
-				<div class="dashboard__filters">
-
-					<!-- FILTER SWITCHES -->
-					<div class="dashboard__filters-item">
-						<label class="switch">
-							<input type="checkbox" id="filterswitch1" class="filterswitch sw-active" checked>
-							<span class="slider round"></span>
-
-						</label>
-						QA Engineering
-					</div>
-					<div class="dashboard__filters-item">
-						<label class="switch">
-							<input type="checkbox" id="filterswitch2" class="filterswitch sw-active" checked>
-							<span class="slider round"></span>
-						</label>
-						Digital Marketing
-					</div>
-					<div class="dashboard__filters-item">
-						<label class="switch">
-							<input type="checkbox" id="filterswitch3" class="filterswitch sw-active" checked>
-							<span class="slider round"></span>
-						</label>
-						General
-					</div>
-					<div class="dashboard__filters-item">
-						<label class="switch switch--fav">
-							<input type="checkbox" id="filterswitch4" class="filterswitch">
-							<span class="slider round slider--fav"></span>
-
-						</label>
-						Prio A
-					</div>
-					<!-- End: FILTER SWITCHES -->
+					<select name="categories" id="categories" class="blogposts__categories-select">
+						<option value="QA Automation">QA Automation</option>
+						<option value="Digital Marketing">Digital Marketing</option>
+						<option value="Digitalisation">Digitalisation</option>
+					</select>
 				</div>
-				<div class="dashboard__tags">
-					<div class="dashboard__tags-item tag-active">SEO</div>
-					<div class="dashboard__tags-item">UX</div>
+				<div class="blogposts__tags">
+					<div class="blogposts__tags-item content-tag tag-active">SEO</div>
+					<div class="blogposts__tags-item content-tag">UX</div>
 				</div>
-				<div class="dashboard__catview">
-					<!-- FILTER LIST -->
-					<div class="dashboard__catview-list" id="list1">
-						<h3>QA Engineering</h3>
-						<ul class="dashboard__list">
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__star">
+				<div class="blogposts__list">
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is simply of the printing and
 
-									</div>
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active" id="progress1">
+							typesetting industry of the printing and
+							typesetting industry dummy text of the printing and
+							typesetting industry. </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
 
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-											<a href="#" target="_blank"></a>
-										</div>
-									</div>
-								</div>
-								<ul class="dashboard__list-item__progress visually-hidden" id="progresslist1">
-									<li class="dashboard__list-item__progress-item pi-active">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-								</ul>
-								<div class="dashboard__list-item__tags">
-									<div class="dashboard__list-item__tags-item">SEO</div>
-									<div class="dashboard__list-item__tags-item">Google Ads</div>
-								</div>
-								<div class="dashboard__list-item__pb">
-									<div class="dashboard__list-item__pb-indicator"></div>
-								</div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__star">
-
-									</div>
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active" id="progress2">
-
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-											<a href="#" target="_blank"></a>
-										</div>
-									</div>
-								</div>
-								<ul class="dashboard__list-item__progress visually-hidden" id="progresslist2">
-									<li class="dashboard__list-item__progress-item pi-active">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-								</ul>
-								<div class="dashboard__list-item__tags">
-									<div class="dashboard__list-item__tags-item">SEO</div>
-									<div class="dashboard__list-item__tags-item">Google Ads</div>
-								</div>
-								<div class="dashboard__list-item__pb">
-									<div class="dashboard__list-item__pb-indicator"></div>
-								</div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__star">
-
-									</div>
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
-
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-											<a href="#" target="_blank"></a>
-										</div>
-									</div>
-								</div>
-								<ul class="dashboard__list-item__progress visually-hidden">
-									<li class="dashboard__list-item__progress-item pi-active">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-								</ul>
-								<div class="dashboard__list-item__tags">
-									<div class="dashboard__list-item__tags-item">SEO</div>
-									<div class="dashboard__list-item__tags-item">Google Ads</div>
-								</div>
-								<div class="dashboard__list-item__pb">
-									<div class="dashboard__list-item__pb-indicator"></div>
-								</div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__star">
-
-									</div>
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
-
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-											<a href="#" target="_blank"></a>
-										</div>
-									</div>
-								</div>
-								<ul class="dashboard__list-item__progress visually-hidden">
-									<li class="dashboard__list-item__progress-item pi-active">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-									<li class="dashboard__list-item__progress-item">1</li>
-									<li class="dashboard__list-item__progress-item">2</li>
-									<li class="dashboard__list-item__progress-item">3</li>
-								</ul>
-								<div class="dashboard__list-item__tags">
-									<div class="dashboard__list-item__tags-item">SEO</div>
-									<div class="dashboard__list-item__tags-item">Google Ads</div>
-								</div>
-								<div class="dashboard__list-item__pb">
-									<div class="dashboard__list-item__pb-indicator"></div>
-								</div>
-							</li>
-
-
-						</ul>
+						</div>
 					</div>
-					<!-- FILTER LIST -->
-					<div class="dashboard__catview-list" id="list2">
-						<h3>Digital Marketing</h3>
-						<ul class="dashboard__list">
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is of the printing and
+							typesetting industryof the printing and
+							typesetting industryof the printing and
+							typesetting industry simply dummy text of the printing and
+							typesetting industry. </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
 
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
-
-										</div>
-										<div class="dashboard__list-item__button summary">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress">
-
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-
-						</ul>
+						</div>
 					</div>
-					<!-- FILTER LIST -->
-					<div class="dashboard__catview-list" id="list3">
-						<h3>General</h3>
-						<ul class="dashboard__list">
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is simply of the printing and
+							typesetting industry dummy text of the printing and
+							typesetting industry. </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
 
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
-
-										</div>
-										<div class="dashboard__list-item__button summary">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress">
-
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-
-						</ul>
+						</div>
 					</div>
-					<!-- FILTER LIST -->
-					<div class="dashboard__catview-list visually-hidden" id="list4">
-						<h3>Prio A</h3>
-						<ul class="dashboard__list">
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is simply dummy text of the printing and
+							typesetting industryof the printing and
+							typesetting industry . </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
 
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress progress-active">
-
-										</div>
-										<div class="dashboard__list-item__button summary">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-							<li class="dashboard__list-item">
-								<div class="dashboard__list-item__container">
-									<div class="dashboard__list-item__data">
-										<strong>Author:</strong> XXX<br>
-										<strong>Name:</strong> YYY<br>
-									</div>
-									<div class="dashboard__list-item__buttons">
-										<div class="dashboard__list-item__button progress">
-
-										</div>
-										<div class="dashboard__list-item__button summary summary-active">
-
-										</div>
-									</div>
-								</div>
-								<div class="dashboard__list-item__pb"></div>
-							</li>
-
-						</ul>
+						</div>
 					</div>
 
 
 				</div>
+				<div class="promo__block">
+					<h2>Promo Text</h2>
+				</div>
+				<div class="blogposts__list">
 
+
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is simply of the printing and
+
+							typesetting industry of the printing and
+							typesetting industry dummy text of the printing and
+							typesetting industry. </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is of the printing and
+							typesetting industryof the printing and
+							typesetting industryof the printing and
+							typesetting industry simply dummy text of the printing and
+							typesetting industry. </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is simply of the printing and
+							typesetting industry dummy text of the printing and
+							typesetting industry. </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="blogposts__list-item">
+						<div class="blogposts__list-item__header">
+							<h2>
+								Blog post title <span class="blogposts__list-item__header-date">15.08.21</span>
+							</h2>
+						</div>
+						<div class="blogposts__list-item__preview">Lorem Ipsum is simply dummy text of the printing and
+							typesetting industryof the printing and
+							typesetting industry . </div>
+						<div class="blogposts__list-item__footer">
+							<div class="blogposts__tags">
+								<div class="blogposts__tags-item tag-active">SEO</div>
+								<div class="blogposts__tags-item tag-active">UX</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
 			</section>
-			<!-- End: LEARNING DASHBOARD -->
+			<!-- RECENT POSTS -->
 		</div>
 	</main>
 	<footer class="footer">

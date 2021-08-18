@@ -1,0 +1,11 @@
+.promo {
+	&__block {
+		min-height: 150px;
+		padding: 20px 35px;
+		background-color: $color__grey;
+
+		background-image: url('../img/banner6.jpg');
+
+		color: #fff;
+	}
+}
