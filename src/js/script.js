@@ -2,34 +2,33 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	//Set variables
 
-	let progressIcons = document.querySelectorAll('.progress'),
-		progressItems = document.querySelectorAll('.onemat__progress-item'),
+	let progressItems = document.querySelectorAll('.onemat__progress-item'),
 		filterSwitches = document.querySelectorAll('.filterswitch'),
 		starCheckers = document.querySelectorAll('.dashboard__list-item__star'),
 		tagCheckers = document.querySelectorAll('.content-tag');
 
 	//Progress Open-Close
-	function openProgress(item) {
-		item.addEventListener('click', function () {
-			if (this.classList.contains('progress-active')) {
-				this.classList.remove('progress-active');
-				this.classList.add('progress-close');
+	// function openProgress(item) {
+	// 	item.addEventListener('click', function () {
+	// 		if (this.classList.contains('progress-active')) {
+	// 			this.classList.remove('progress-active');
+	// 			this.classList.add('progress-close');
 
-				let thisid = this.id.slice(8);
+	// 			let thisid = this.id.slice(8);
 
-				let progressDiv = document.getElementById('progresslist' + thisid);
-				progressDiv.classList.remove('visually-hidden');
-			} else {
-				this.classList.remove('progress-close');
-				this.classList.add('progress-active');
+	// 			let progressDiv = document.getElementById('progresslist' + thisid);
+	// 			progressDiv.classList.remove('visually-hidden');
+	// 		} else {
+	// 			this.classList.remove('progress-close');
+	// 			this.classList.add('progress-active');
 
-				let thisid = this.id.slice(8);
+	// 			let thisid = this.id.slice(8);
 
-				let progressDiv = document.getElementById('progresslist' + thisid);
-				progressDiv.classList.add('visually-hidden');
-			}
-		});
-	}
+	// 			let progressDiv = document.getElementById('progresslist' + thisid);
+	// 			progressDiv.classList.add('visually-hidden');
+	// 		}
+	// 	});
+	// }
 	//Progress-Item active-inactive
 	function setItemColor(item) {
 		item.addEventListener('click', function () {
@@ -81,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-	progressIcons.forEach(openProgress);
+	//progressIcons.forEach(openProgress);
 	progressItems.forEach(setItemColor);
 	filterSwitches.forEach(chooseSwitch);
 	starCheckers.forEach(starActive);
