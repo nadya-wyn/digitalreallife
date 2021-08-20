@@ -42,7 +42,7 @@
 		@include reset-list;
 
 		margin: 30px auto 0 auto;
-		min-width: 324px;
+		max-width: 324px;
 
 		display: flex;
 		flex-wrap: wrap;
