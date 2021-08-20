@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	//Set variables
 
 	let progressIcons = document.querySelectorAll('.progress'),
-		progressItems = document.querySelectorAll('.dashboard__list-item__progress-item'),
+		progressItems = document.querySelectorAll('.onemat__progress-item'),
 		filterSwitches = document.querySelectorAll('.filterswitch'),
 		starCheckers = document.querySelectorAll('.dashboard__list-item__star'),
 		tagCheckers = document.querySelectorAll('.content-tag');
