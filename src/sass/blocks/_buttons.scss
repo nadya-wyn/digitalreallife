@@ -1,4 +1,12 @@
-.button {}
+.button {
+	&--settings {
+		margin-top: 20px;
+		background-color: $color__main;
+		border-bottom: none;
+		color: #fff;
+		font-size: 1.4em;
+	}
+}
 
 /* The switch - the box around the slider */
 .switch {

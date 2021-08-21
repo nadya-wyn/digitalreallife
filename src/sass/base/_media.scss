@@ -60,4 +60,22 @@
 		}
 	}
 
+	.settings {
+		flex-flow: row wrap;
+
+		&__input {
+			width: 440px;
+			margin: 10px;
+		}
+
+		&__select {
+			width: 100%;
+		}
+	}
+
+	.button {
+		&--settings {
+			height: 100px;
+		}
+	}
 }
