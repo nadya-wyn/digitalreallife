@@ -20,12 +20,16 @@
 				flex-basis: $post-width--desktop;
 				margin: 0 15px 30px 15px;
 
+				h2 {
+					font-size: 1.8em;
+				}
+
 				&--featured {
 					flex-basis: 100%;
 					padding-left: $post-width--desktop;
 
 					h2 {
-						font-size: 2em;
+						font-size: 2.2em;
 					}
 				}
 			}
@@ -57,6 +61,17 @@
 		&__highlight {
 			font-size: 1.3em;
 			margin: 45px 60px;
+		}
+
+		&__similarposts {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+
+			&-item {
+				width: $post-width--desktop--similar;
+
+			}
 		}
 	}
 

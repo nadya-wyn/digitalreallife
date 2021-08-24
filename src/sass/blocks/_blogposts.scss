@@ -57,22 +57,24 @@
 		flex-flow: row wrap;
 
 		&-item {
+			border-radius: 2px;
+
 			flex-basis: 100%;
 
 			margin-bottom: 20px;
 			min-height: 250px;
 
-
-
-			padding: 20px;
-			background-color: #eee;
-
+			border: 1px solid $color__grey--l;
 			border-bottom: 6px solid $color__main;
+
+			background-image: url('../img/banner6.jpg');
 
 			a {
 				display: block;
 				width: 100%;
 				height: 100%;
+
+				padding: 50px 20px 20px 20px;
 
 				display: flex;
 
@@ -83,6 +85,9 @@
 				text-decoration: none;
 
 				color: $color__dark;
+
+				background: rgb(255, 255, 255);
+				background: linear-gradient(0deg, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 0.7343312324929971) 67%, rgba(255, 255, 255, 0.5018382352941176) 77%, rgba(255, 255, 255, 0) 100%);
 			}
 
 			a:hover {
@@ -113,7 +118,8 @@
 			}
 
 			&__preview {
-				font-size: smaller;
+				font-size: 0.8em;
+				line-height: 1.6em;
 			}
 
 

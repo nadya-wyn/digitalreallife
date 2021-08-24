@@ -1,7 +1,9 @@
 $color__main: #3ae9d2;
 $color__main--l: #80f0d9;
+$color__main--d: #288673;
 $color__dark: rgb(29, 29, 29);
 $color__grey: rgb(51, 51, 51);
+$color__grey--d: #525252;
 $color__grey--l: #a0a0a0;
 
 
@@ -15,6 +17,7 @@ $container-width--mobile: 100%;
 $container-width--desktop: 990px;
 
 $post-width--desktop: $container-width--desktop / 2 - 45px;
+$post-width--desktop--similar: $container-width--desktop / 3 - 25px;
 
 $text-width--desktop: $container-width--desktop * 0.7;
 $sidebar-width--desktop: $container-width--desktop * 0.25;
