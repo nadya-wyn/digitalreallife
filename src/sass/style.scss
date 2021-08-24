@@ -68,6 +68,13 @@ a {
 	}
 }
 
+blockquote {
+	border-left: 4px solid $color__main;
+	margin: 0;
+	padding-left: 20px;
+}
+
+
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/main";
