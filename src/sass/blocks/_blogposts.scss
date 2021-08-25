@@ -14,6 +14,21 @@
 		}
 	}
 
+	&__categories1 {
+		&-select {
+			width: 100%;
+			height: 40px;
+			padding: 6px;
+
+			border: none;
+			border-bottom: 2px solid $color__main;
+
+			background-color: #fff;
+			color: $color__main;
+
+		}
+	}
+
 	&__tags {
 		display: flex;
 

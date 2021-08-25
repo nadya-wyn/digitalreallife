@@ -7,8 +7,11 @@
 
 	//BLOGPOSTS
 
+
 	.blogposts {
 		&__categories {
+			width: 50%;
+
 			&-select {
 				width: 50%;
 			}
